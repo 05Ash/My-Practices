@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Form</title>
+</head>
+<body>
+    <header>
+        <h1>Employment application</h1>
+        <p>Please complete this application by entering all the details.</p>
+    </header>
+    <main>
+        <form action="/submit-from.php" method="post">
+            <fieldset id="employerDetails">
+                <label for="employerName">Employer <input type="text" name="employerName" id="employerName"></label>
+                <label for="jobOrder">Job Order # <input type="text" name="jobOrder" id="jobOrder"></label>
+                <label for="jobTitle">Job Title <input type="text" name="jobTitle" id="jobTitle"></label>
+            </fieldset>
+            <fieldset id="personalDetails">
+                <legend>Personal Data</legend>
+                <label for="applicantName">Full Name <input type="text" name="applicantName" id="applicantName"></label>
+                <fieldset id="presentAddress">
+                    <legend>Present Address</legend>
+                    <label for="personalStreetNo">Street / P.O. Box <input type="text" name="personalStreetNo" id="personalStreetNo"></label>
+                    <label for="personalCity">City <input type="text" id="personalCity" name="personalCity"></label>
+                    <label for="personalState">State <input type="text" id="personalState" name="personalState"></label>
+                    <label for="personalZipCode">Zip Code <input type="text" id="personalZipCode" name="personalZipCode"></label>
+                </fieldset>
+                <label for="phoneNo">Phone <input type="text" name="phoneNo" id="phoneNo"></label>
+                <label for="email">Email Address <input type="email" name="email" id="email"></label>
+            </fieldset>
+            <fieldset id="educationDetails">
+                <legend>Education</legend>
+                <fieldset id="highSchoolDiploma">
+                    <legend>High School Diploma/GED/HISET?</legend>
+                    <label for="yesGED"><input type="radio" name="highSchoolDiploma" id="yesGED" value="yes"> Yes</label>
+                    <label for="noGED"><input type="radio" name="highSchoolDiploma" id="noGED" value="no"> No</label>
+                </fieldset>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Phone</th>
+                        <th>Diploma/Degree/Specialization</th>
+                    </tr>
+                    <tr>
+                        <th>High School</th>
+                        <td><input type="text" name="highSchoolName" id="highSchoolName"></td>
+                        <td><input type="text" name="highSchoolLocation" id="highSchoolLocation"></td>
+                        <td><input type="text" name="highSchoolPhone" id="highSchoolPhone"></td>
+                        <td><input type="text" name="highSchoolSpecialization" id="highSchoolSpecialization"></td>
+                    </tr>
+                    <tr>
+                        <th>College/University</th>
+                        <td><input type="text" name="collegeName" id="collegeName"></td>
+                        <td><input type="text" name="collegeLocation" id="collegeLocation"></td>
+                        <td><input type="text" name="collegePhone" id="collegePhone"></td>
+                        <td><input type="text" name="collegeSpecialization" id="collegeSpecialization"></td>
+                    </tr>
+                    <tr>
+                        <th>Courses & Training</th>
+                        <td><input type="text" name="courseName" id="courseName"></td>
+                        <td><input type="text" name="courseLocation" id="courseLocation"></td>
+                        <td><input type="text" name="coursePhone" id="coursePhone"></td>
+                        <td><input type="text" name="courseSpecialization" id="courseSpecialization"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset id="experienceDetails1">
+                <legend>Work Experience<span>(List most recent work experience first.)</span></legend>
+                <label for="company1Name">Company Name<input type="text" name="company1Name" id="company1Name"></label>
+                <label for="supervisorName1">Immediate Supervisor <input type="text" name="supervisorName1" id="supervisorName1"></label>
+                <fieldset id="company1Address"></fieldset>
+                    <legend>Company Address</legend>
+                    <label for="company1StreetNo">Street / P.O. Box <input type="text" name="company1StreetNo" id="company1StreetNo"></label>
+                    <label for="company1City">City <input type="text" id="company1City" name="company1City"></label>
+                    <label for="company1State">State <input type="text" id="company1State" name="company1State"></label>
+                    <label for="company1ZipCode">Zip Code <input type="text" id="company1ZipCode" name="company1ZipCode"></label>
+                </fieldset>
+                <label for="company1JobTitle">Job Title <input type="text" name="company1JobTitle" id="company1JobTitle"></label>
+                <label for="company1Phone">Phone <input type="text" name="company1Phone" id="company1Phone"></label>
+                <label for="jobDescription1">Job Description <span>(duties, skills, equipment used) <textarea name="jobDescription1" id="jobDescription1" rows="4"></textarea></span></label>
+                <fieldset id="company1Period">
+                    <legend>Dates</legend>
+                    <label for="company1StartingDate">From<span>(mm/yy)</span> <input type="date" name="company1Period" id="company1StartingDate"></label>
+                    <label for="company1LeavingDate">To<span>(mm/yy)</span> <input type="date" name="company1Period" id="company1LeavingDate"></label>
+                </fieldset>
+                <label for="reasonOfLeaveingCompany1">Reson For Leaving <input type="text" name="reasonOfLeaveingCompany1" id="reasonOfLeaveingCompany1"></label>
+            </fieldset>
+            <fieldset id="experienceDetails2">
+                <legend>Work Experience<span>(List most recent work experience first.)</span></legend>
+                <label for="company2Name">Company Name<input type="text" name="company2Name" id="company2Name"></label>
+                <label for="supervisorName2">Immediate Supervisor <input type="text" name="supervisorName2" id="supervisorName2"></label>
+                <fieldset id="company2Address"></fieldset>
+                    <legend>Company Address</legend>
+                    <label for="company2StreetNo">Street / P.O. Box <input type="text" name="company2StreetNo" id="company2StreetNo"></label>
+                    <label for="company2City">City <input type="text" id="company2City" name="company2City"></label>
+                    <label for="company2State">State <input type="text" id="company2State" name="company2State"></label>
+                    <label for="company2ZipCode">Zip Code <input type="text" id="company2ZipCode" name="company2ZipCode"></label>
+                </fieldset>
+                <label for="company2JobTitle">Job Title <input type="text" name="company2JobTitle" id="company2JobTitle"></label>
+                <label for="company2Phone">Phone <input type="text" name="company2Phone" id="company2Phone"></label>
+                <label for="jobDescription2">Job Description <span>(duties, skills, equipment used) <textarea name="jobDescription2" id="jobDescription2" rows="4"></textarea></span></label>
+                <fieldset id="company2Period">
+                    <legend>Dates</legend>
+                    <label for="company2StartingDate">From<span>(mm/yy)</span> <input type="date" name="company2Period" id="company2StartingDate"></label>
+                    <label for="company2LeavingDate">To<span>(mm/yy)</span> <input type="date" name="company2Period" id="company2LeavingDate"></label>
+                </fieldset>
+                <label for="reasonOfLeaveingCompany2">Reson For Leaving <input type="text" name="reasonOfLeaveingCompany2" id="reasonOfLeaveingCompany2"></label>
+            </fieldset>
+
+        </form>
+    </main>
+
+</body>
+</html>
