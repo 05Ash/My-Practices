@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employment Form</title>
+    <link rel="stylesheet" href="/assets/form_project.css">
 </head>
 <body>
     <header>
@@ -13,9 +14,9 @@
     <main>
         <form action="/submit-from.php" method="post">
             <fieldset id="employerDetails">
-                <label for="employerName">Employer <input type="text" name="employerName" id="employerName"></label>
-                <label for="jobOrder">Job Order # <input type="text" name="jobOrder" id="jobOrder"></label>
-                <label for="jobTitle">Job Title <input type="text" name="jobTitle" id="jobTitle"></label>
+                <label for="employerName" class="block">Employer <input type="text" name="employerName" id="employerName"></label>
+                <label for="jobOrder" class="inline">Job Order # <input type="text" name="jobOrder" id="jobOrder"></label>
+                <label for="jobTitle" class="inline">Job Title <input type="text" name="jobTitle" id="jobTitle"></label>
             </fieldset>
             <fieldset id="personalDetails">
                 <legend>Personal Data</legend>
